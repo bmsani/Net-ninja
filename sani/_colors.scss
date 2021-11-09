@@ -6,6 +6,7 @@
         background-color: $val;
     }
 
+    @if($val != black and $val != white){
     //light variation
 
     @for $i from 1 through 9 {
@@ -28,5 +29,6 @@
             background-color: mix(black, $val, $i * 10);
         }
     }
+} 
 }
 
