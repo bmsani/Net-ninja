@@ -40,7 +40,7 @@ a {
   color: #326dee;
 }
 
-.text-hover-key:hover {
+.text-hover-primary:hover {
   color: #326dee;
 }
 
@@ -256,7 +256,7 @@ a {
   color: #1ac888;
 }
 
-.text-hover-key:hover {
+.text-hover-secondary:hover {
   color: #1ac888;
 }
 
@@ -472,7 +472,7 @@ a {
   color: #d32752;
 }
 
-.text-hover-key:hover {
+.text-hover-error:hover {
   color: #d32752;
 }
 
@@ -688,7 +688,7 @@ a {
   color: #f6c31c;
 }
 
-.text-hover-key:hover {
+.text-hover-info:hover {
   color: #f6c31c;
 }
 
@@ -904,7 +904,7 @@ a {
   color: #1919e6;
 }
 
-.text-hover-key:hover {
+.text-hover-blue:hover {
   color: #1919e6;
 }
 
@@ -1120,7 +1120,7 @@ a {
   color: #e61919;
 }
 
-.text-hover-key:hover {
+.text-hover-red:hover {
   color: #e61919;
 }
 
@@ -1336,7 +1336,7 @@ a {
   color: #e6e619;
 }
 
-.text-hover-key:hover {
+.text-hover-yellow:hover {
   color: #e6e619;
 }
 
@@ -1552,7 +1552,7 @@ a {
   color: #19e635;
 }
 
-.text-hover-key:hover {
+.text-hover-green:hover {
   color: #19e635;
 }
 
@@ -1768,7 +1768,7 @@ a {
   color: #ffa600;
 }
 
-.text-hover-key:hover {
+.text-hover-orange:hover {
   color: #ffa600;
 }
 
@@ -1984,7 +1984,7 @@ a {
   color: #9900ff;
 }
 
-.text-hover-key:hover {
+.text-hover-purple:hover {
   color: #9900ff;
 }
 
@@ -2200,7 +2200,7 @@ a {
   color: #808080;
 }
 
-.text-hover-key:hover {
+.text-hover-gray:hover {
   color: #808080;
 }
 
@@ -2416,7 +2416,7 @@ a {
   color: black;
 }
 
-.text-hover-key:hover {
+.text-hover-black:hover {
   color: black;
 }
 
@@ -2428,7 +2428,7 @@ a {
   color: white;
 }
 
-.text-hover-key:hover {
+.text-hover-white:hover {
   color: white;
 }
 
