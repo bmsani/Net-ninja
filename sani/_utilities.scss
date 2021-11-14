@@ -2,18 +2,18 @@
 
 
 $utilities: (
-    "padding": (
-        "prefix" : "p",
-        "values": (
-            "0": 0,
-            "1": $base-padding,
-            "2": $base-padding * 2,
-            "3": $base-padding * 4,
-            "4": $base-padding * 6,
-            "5": $base-padding * 8,
-        ),
+    // "padding": (
+    //     "prefix" : "p",
+    //     "values": (
+    //         "0": 0,
+    //         "1": $base-padding,
+    //         "2": $base-padding * 2,
+    //         "3": $base-padding * 4,
+    //         "4": $base-padding * 6,
+    //         "5": $base-padding * 8,
+    //     ),
 
-    ),
+    // ),
     "padding-left": (
         "prefix": "pl",
         "values": (
@@ -163,21 +163,38 @@ $utilities: (
 ); 
 
 //generate utilities classes
+// @each $property, $map in $utilities {
+//     $prefix: map-get($map, "prefix");
+//     $values: map-get($map, "values");
+
+//     @each $v, $k in $values {
+//         @if($k == 'default') {
+//             .#{$prefix}{
+//                 #{$property}: $v;
+//             } 
+//           }@else {
+//               .#{$prefix}-#{$k}{
+//                   #{$property}: $v;
+              
+//             } 
+//            }          
+        
+//     }
+// }
+  
 @each $property, $map in $utilities {
-    $prefix: map-get($map, "prefix");
-    $values: map-get($map, "values");
+  $prefix: map-get($map, "prefix");
+  $values: map-get($map, "values");
 
-    @each $v, $k in $values {
-        @if($k == 'deafult') {
-            .#{$prefix}{
-                #{$property}: $v;
-            }else{
-                .#{$prefix}-#{$k}{
-                    #{$property}: $v;
-                }
-            }
-        }
+  @each $k, $v in $values {
+    @if($k == "default") {
+      .#{$prefix} {
+        #{$property}: $v;
+      }
+    } @else {
+      .#{$prefix}-#{$k}{
+        #{$property}: $v;
+      }
     }
-
-
+  }
 }
